@@ -12,5 +12,12 @@ describe "clock_angle" do
 			expect(hours_to_degrees(1)).to eq(30)
 		end
 	end
+	describe "time_to_angle" do 
+		it "translates an exact time to a angle 
+		   between the hour and minute hand" do 
+		   	expect(time_to_angle(12, 5)).to eq(30)
+		   	expect(time_to_angle(6, 45)).to eq(90)
+		end
+	end
 end
 
